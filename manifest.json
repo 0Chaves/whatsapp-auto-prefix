@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp Auto Prefix",
+    "version": "1.0",
+    "description": "Adiciona automaticamente o nome do funcionário antes de cada mensagem no WhatsApp Web.",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://web.whatsapp.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
